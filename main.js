@@ -70,7 +70,7 @@ es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 */
 
 var Array_1 = [1,2,3];
-var Arrai_2 = ['a','b','c'];
+var Array_2 = ['a','b','c'];
 function concatenaAlternati ( lista_1, lista_2){
     var listaNuova = [];
     for(var i = 0; i < lista_1.length; i++){
@@ -79,7 +79,7 @@ function concatenaAlternati ( lista_1, lista_2){
     }
     return listaNuova;
 }
-console.log(concatenaAlternati(Arrai_1,Arrai_2));
+console.log(concatenaAlternati(Array_1,Array_2));
 
 /*Snack 5:
 Scrivi una funzione che accetti tre argomenti:
