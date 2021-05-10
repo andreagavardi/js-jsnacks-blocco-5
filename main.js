@@ -85,3 +85,19 @@ console.log(concatenaAlternati(Array_1,Array_2));
 Scrivi una funzione che accetti tre argomenti:
 un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array).
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b” */ 
+
+var arrayProva = ['pippo', 'paperino', 'pluto', 'qui', 'quo', 'qua', 'nonna papera'];
+
+function valoriCompresi(lista, a, b){
+    var nuovaLista = []; 
+    if (b > lista.length){
+        b = lista.length;
+    }
+   while(a < (b-1)){    
+    nuovaLista.push(lista[a]);    
+    a++;
+    }
+    return nuovaLista;
+}
+
+console.log( valoriCompresi(arrayProva,1,10));
