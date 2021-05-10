@@ -49,11 +49,22 @@ console.log(zucchineMin_15, zucchineMax_15);
 
 console.log(pesoTotale(zucchineMin_15), pesoTotale(zucchineMax_15));
 
-
-
 /*Snack 3:
-Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
-Snack 4:
+Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)*/
+
+function alContrario (parola){
+    //divido la parola in un array contenente in ogni elemento un lettera
+  var splitParola = parola.split("");
+    //inverto l'ordine degli elementi dell'array
+  var revArray = splitParola.reverse(); 
+  return revArray.join(""); //convero l'array in una stringa
+  
+}
+
+console.log(alContrario('i topi non avevano nipoti'));
+
+
+/*Snack 4:
 Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
 es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 Snack 5:
