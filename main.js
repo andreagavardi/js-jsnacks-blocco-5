@@ -67,7 +67,21 @@ console.log(alContrario('i topi non avevano nipoti'));
 /*Snack 4:
 Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro
 es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
-Snack 5:
+*/
+
+var Array_1 = [1,2,3];
+var Arrai_2 = ['a','b','c'];
+function concatenaAlternati ( lista_1, lista_2){
+    var listaNuova = [];
+    for(var i = 0; i < lista_1.length; i++){
+        listaNuova.push(lista_1[i]);
+        listaNuova.push(lista_2[i]);    
+    }
+    return listaNuova;
+}
+console.log(concatenaAlternati(Arrai_1,Arrai_2));
+
+/*Snack 5:
 Scrivi una funzione che accetti tre argomenti:
 un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto il numero di elementi dell’array).
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b” */ 
